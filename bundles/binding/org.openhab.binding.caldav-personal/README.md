@@ -20,6 +20,7 @@ openhab.cfg
 
 **Restrictions**
 * The calendar-id must be just upper- and lowercase characters. (e. g. private or work, something like 1 or private-home is not allowed)
+  * Special characters must be escaped, e.g. '-' to '%2D', ref. https://www.w3schools.com/tags/ref_urlencode.asp
 * disableCertificateVerification can just be set to true (default is false) if ssl is used.
 * timeZone must just be used if the local timezone of the pc is not the correct one. E. g. if you are living in Berlin and your calendar timezone is Berlin and your local pc timezone is Berlin you must not define this setting
 * '' for item configurations are optional (eventNr:1 and eventNr:'1' is the same). I prefer to use ''
